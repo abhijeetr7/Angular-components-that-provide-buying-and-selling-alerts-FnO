@@ -1,0 +1,24 @@
+<div class="form-group">
+    <label for="symbol">Stock/Futures Symbol</label>
+    <input type="text" [(ngModel)]="symbol" class="form-control" id="symbol" placeholder="Enter symbol (e.g., AAPL)">
+  </div>
+  <div class="form-group">
+    <label for="rsi">RSI Value</label>
+    <input type="number" [(ngModel)]="rsi" class="form-control" id="rsi">
+  </div>
+  <div class="form-group">
+    <label for="movingAvg">Moving Average</label>
+    <input type="number" [(ngModel)]="movingAvg" class="form-control" id="movingAvg">
+  </div>
+  <div class="form-group">
+    <label for="useMACD">
+      <input type="checkbox" [(ngModel)]="useMACD"> Use MACD
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="useBollingerBands">
+      <input type="checkbox" [(ngModel)]="useBollingerBands"> Use Bollinger Bands
+    </label>
+  </div>
+  <button (click)="updateSettings()" class="btn btn-primary">Update</button>
+  

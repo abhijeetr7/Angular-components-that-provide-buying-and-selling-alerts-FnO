@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Futures & Options Trading Alerts</h1>
+    
+    <app-settings (settingsChanged)="updateAlertSettings($event)"></app-settings>
+    <app-alert 
+      [symbol]="symbol" 
+      [rsiValue]="rsi" 
+      [movingAvgValue]="movingAvg"
+      [useMACD]="useMACD"
+      [useBollingerBands]="useBollingerBands">
+    </app-alert>
+  </div>
+  

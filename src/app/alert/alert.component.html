@@ -1,0 +1,10 @@
+<div *ngIf="buyAlert" class="alert alert-success">
+    Buy Signal for {{symbol}}: Conditions met for buying!
+  </div>
+  <div *ngIf="sellAlert" class="alert alert-danger">
+    Sell Signal for {{symbol}}: Conditions met for selling!
+  </div>
+  <div *ngIf="!buyAlert && !sellAlert" class="alert alert-info">
+    No significant signal at the moment for {{symbol}}.
+  </div>
+  
